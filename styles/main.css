@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* Stile generale */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+header h1 {
+    line-height: 50px;
+}
+
+/* Board */
+.board {
+    width: 300px;
+    height: 600px;
+    background-color: #007acc;
+    position: relative;
+    border: 5px solid #000;
+    border-radius: 10px;
+}
+
+.goal {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.goal.top {
+    top: 20px;
+}
+
+.goal.bottom {
+    bottom: 20px;
+}
+
+.center-line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.obstacle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    position: absolute;
+}
+
+.obstacle.one {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.obstacle.two {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player.one {
+    top: 20%;
+}
+
+.player.two {
+    bottom: 12%;
+}
+
+
